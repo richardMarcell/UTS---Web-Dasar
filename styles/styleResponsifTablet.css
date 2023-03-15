@@ -1,0 +1,182 @@
+@media (max-width: 768px) {
+  .navLainnya .toggle a {
+    font-size: 12px;
+  }
+
+  .navLainnya .toggle {
+    height: 30px;
+    width: 90px;
+    display: none;
+  }
+
+  #home h1 {
+    font-size: 15px;
+  }
+
+  #home span {
+    font-size: 15px;
+  }
+
+  header nav ul li {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav {
+    position: fixed;
+    height: 300vh;
+    background-color: #2d4059;
+    top: 0;
+    right: -400px;
+    width: 200px;
+    padding-right: 200px;
+    transition: 0.2s linear;
+  }
+
+  header nav ul li a {
+    color: white;
+    font-size: 20px;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .popUp {
+    right: 0;
+  }
+
+  .productList h1 {
+    font-size: 30px;
+  }
+
+  #hamburgerNav {
+    display: block;
+    cursor: pointer;
+    transition: 0.2s linear;
+  }
+
+  #hamburgerNav:hover {
+    color: #ea5455;
+  }
+
+  #about {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    margin: auto;
+    padding-left: 0;
+  }
+
+  #about .contentabout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  #about .contentabout h1,
+  p {
+    margin: 10px auto;
+  }
+
+  .detail {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .detail p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pickUp h1,
+  .pickUp p {
+    text-align: center;
+  }
+
+  .pickUp p {
+    font-size: 12px;
+    margin: 0px;
+  }
+
+  .contentPickUp {
+    width: 400px;
+    margin: auto;
+  }
+
+
+  .pickUp {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+
+  .service .serviceBox {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    padding: 0px;
+  }
+
+  .footerTengah .footerTengahKiri {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 100px;
+  }
+
+  .footerTengahKiri {
+    justify-content: center;
+  }
+
+  .footerTengahKanan {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+
+  .footerBawah {
+    margin-top: 20px;
+  }
+
+  .footerTengahKanan input {
+    margin-top: 20px;
+  }
+
+  .footerTengahKanan {
+    text-align: center;
+  }
+
+  .footerTengah,
+  .footerAtas,
+  .footerBawah {
+    justify-content: center;
+  }
+
+  .footerTengah {
+    flex-wrap: wrap;
+    width: 400px;
+  }
+
+  #home {
+    height: 400px;
+  }
+
+  .slider-container {
+    height: 500px;
+  }
+}
+
+@media (max-width: 630px) {
+  #home {
+    height: 320px;
+  }
+}
+
+@media (max-width: 530px) {
+  #home {
+    height: 280px;
+  }
+}

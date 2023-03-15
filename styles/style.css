@@ -1,0 +1,455 @@
+/* Persiapan Default */
+:root {
+  --primary1: #2d4059;
+  --primary2: #ea5455;
+
+  --font1: "Sen", sans-serif;
+  --font2: "Righteous", cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 20px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--font1);
+  color: var(--primary1);
+  position: absolute;
+  margin: auto;
+  width: 100%;
+}
+
+/* Style Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+  align-items: center;
+  border-bottom: 0.5px solid black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  background-color: white;
+}
+
+header .containerLogo h1 {
+  font-family: var(--font2);
+  font-style: italic;
+  transition: 0.2s linear;
+}
+header .containerLogo h1:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+header .containerLogo h1 span {
+  color: var(--primary2);
+  transition: 0.2s;
+}
+
+header .containerLogo h1:hover span {
+  cursor: pointer;
+  color: orange;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+header nav ul li a {
+  color: var(--primary1);
+}
+
+header nav ul li a::after {
+  content: "";
+  border-bottom: 0.5px solid black;
+  display: block;
+  padding-bottom: 3px;
+  transform: scale(0);
+  transition: 0.2s linear;
+}
+
+header nav ul li a:hover {
+  color: var(--primary2);
+  font-weight: bolder;
+}
+
+header nav ul li a:hover::after {
+  transform: scale(0.7);
+}
+
+header nav ul li a:focus {
+  color: var(--primary2);
+  font-weight: bolder;
+}
+
+header nav ul li a:focus::after {
+  transform: scale(0.7);
+}
+
+.navLainnya span {
+  display: none;
+}
+
+.navLainnya .toggle {
+  width: 100px;
+  background-color: var(--primary2);
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navLainnya .toggle a {
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  z-index: 99;
+}
+
+.navLainnya .toggle::before {
+  content: "";
+  background-color: var(--primary1);
+  display: block;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 1;
+  transform: scalex(0);
+  transition: 0.2s linear;
+}
+
+.navLainnya .toggle:hover::before {
+  transform: scalex(1);
+}
+
+/* Style Main */
+main {
+  position: relative;
+  left: 0;
+  right: 0;
+  background-color: #f8fafb;
+}
+
+/* Style Home */
+#home {
+  padding-top: 100px;
+  background-image: url("../img/backgroundHome.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  object-fit: cover;
+  height: 840px;
+  position: relative;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border-bottom: 1px solid #2d4059;
+}
+
+#home .kotakHome {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#home h1 {
+  z-index: 999;
+  color: black;
+  font-family: var(--font2);
+  text-align: center;
+  font-size: 300%;
+  width: 100%;
+}
+#home span {
+  color: var(--primary2);
+  text-align: center;
+  font-style: italic;
+  display: block;
+  font-family: var(--font2);
+  font-size: 300%;
+  font-weight: bolder;
+  color: #2d4059;
+}
+
+#home span i {
+  color: #ea5455;
+}
+
+/* Style About */
+#about {
+  padding-left: 40px;
+  padding-top: 100px;
+  display: flex;
+  padding-bottom: 100px;
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+  height: 900px;
+}
+
+.contentabout {
+  padding-left: 20px;
+  width: 600px;
+}
+
+#about .contentabout h1 {
+  font-family: var(--font2);
+  font-size: 40px;
+}
+
+#about .contentabout p {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+#about .contentabout a {
+  display: block;
+  background-color: var(--primary2);
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+  border-radius: 20px;
+  color: black;
+  font-size: 20px;
+  font-weight: bolder;
+  transition: 0.2s linear;
+}
+
+#about .contentabout a:hover {
+  color: white;
+  background-color: var(--primary1);
+}
+
+#about .gambarabout img {
+  width: 600px;
+  height: 400px;
+}
+
+/* Style Product */
+#product {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#product .productHead {
+  text-align: center;
+  color: var(--primary1);
+  font-size: 40px;
+  font-family: var(--font2);
+}
+
+.productList {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.productBox {
+  width: 400px;
+  height: 350px;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 15%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.productBox h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.productBox h4 {
+  width: 100%;
+  text-align: center;
+}
+
+.productBox .kotakAnimasi {
+  width: 100%;
+  height: 200px;
+}
+
+/* Style gallery */
+.gallery {
+  width: 100%;
+  padding-top: 100px;
+}
+
+.gallery #galleryHead {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-family: var(--font2);
+}
+
+.slider-container {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-container img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slider-container img.active {
+  opacity: 1;
+}
+
+
+
+/* Style Footer */
+footer {
+  width: 100%;
+  background-color: #f8fafb;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.footerAtas,
+.footerTengah,
+.footerBawah {
+  width: 100%;
+}
+
+.footerAtas {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+.footerAtas h1 {
+  color: var(--primary1);
+  font-style: italic;
+  font-weight: bolder;
+  font-family: var(--font2);
+}
+
+.footerAtas h1 span {
+  color: var(--primary2);
+}
+
+.footerTengah {
+  display: flex;
+}
+
+.footerTengahKiri .navigasiTambahan h1 {
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: var(--font2);
+}
+
+.footerTengahKiri .navigasiTambahan a {
+  display: block;
+  margin-top: 5px;
+  color: var(--primary1);
+  font-weight: lighter;
+  transition: 0.2s linear;
+}
+
+.navigasiTambahan {
+  margin-right: 100px;
+}
+
+.footerTengahKiri {
+  display: flex;
+  padding-bottom: 20px;
+  width: 50%;
+}
+
+.footerTengahKiri .navigasiTambahan a:hover {
+  font-weight: bold;
+  color: var(--primary2);
+}
+
+.footerTengahKanan h1 {
+  font-family: var(--font2);
+  font-size: 25px;
+}
+
+.ourContact a {
+  display: block;
+}
+
+.ourContact h1 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: var(--font2);
+}
+
+.ourContact a {
+  color: var(--primary1);
+  margin-top: 5px;
+  transition: 0.2s linear;
+}
+
+.ourContact a:hover {
+  font-weight: bold;
+  color: var(--primary2);
+}
+
+.footerTengahKanan {
+  width: 40%;
+}
+
+.footerBawah {
+  display: flex;
+  justify-content: center;
+}
+
+.footerBawah h3 {
+  font-weight: lighter;
+  font-size: 15px;
+}

@@ -1,0 +1,28 @@
+@media (max-width: 1366px) {
+  #about .contentabout h1 {
+    font-size: 35px;
+  }
+
+  #about .contentabout p {
+    font-size: 20px;
+  }
+
+  #about .contentabout a {
+    padding: 5px;
+    font-size: 15px;
+    width: 110px;
+  }
+
+  #about .gambarabout img {
+    width: 450px;
+    height: 300px;
+  }
+
+  .dataDiri .profile img {
+    width: 250px;
+  }
+
+  #home {
+    height: 600px;
+  }
+}

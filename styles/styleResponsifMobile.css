@@ -1,0 +1,80 @@
+@media (max-width: 500px) {
+  #serviceHead {
+    font-size: 40px;
+  }
+
+  #home h1 {
+    font-size: 30px;
+  }
+
+  #home span {
+    font-size: 30px;
+  }
+
+  #home {
+    background-image: none;
+  }
+
+  footer button {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-container {
+    height: 400px;
+  }
+
+  main {
+    position: relative;
+    right: 0;
+    left: 0;
+    margin-left: 0;
+  }
+
+  input {
+    margin-right: 20px;
+  }
+
+  #about .gambarabout img {
+    width: 400px;
+  }
+
+  .footerTengahKiri {
+    flex-wrap: wrap;
+  }
+
+  .footerTengahKiri .navigasiTambahan {
+    margin-right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .ourContact {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 440px) {
+  main {
+    left: 0px;
+    right: 0px;
+    background-color: white;
+  }
+
+  footer {
+    position: relative;
+    left: 0px;
+    right: 0px;
+  }
+
+  #home h1 {
+    font-size: 25px;
+  }
+
+  #home span {
+    font-size: 25px;
+  }
+}
