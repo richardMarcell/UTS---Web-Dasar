@@ -179,4 +179,13 @@
   #home {
     height: 280px;
   }
+
+  .slider-container {
+    width: 400px;
+    height: 300px;
+  }
+
+  .reason .reasonBox {
+    font-size: 15px;
+  }
 }
